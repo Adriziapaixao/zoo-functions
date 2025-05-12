@@ -5,9 +5,7 @@ def get_employee_by_name(employee_name):
         return []
 
     for employee in data['employees']:
-        if employee['firstName'] == employee_name:
-            return [employee]
-        elif employee['lastName'] == employee_name:
+        if employee['firstName'] == employee_name or employee['lastName'] == employee_name:
             return [employee]
 
     else:
